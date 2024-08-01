@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.left-side {
+  background-color: #f0f0f0;
+}
+
+.right-side {
+  background-color: #fff;
+}
+
+.timer-list, .timer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+}
+
+.timer-item p {
+  margin: 5px 0;
+}
+
+.timer-item .delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.timer-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.timer-form button {
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.remaining-time {
+  font-size: 1.3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) {
+  .app {
+    flex-direction: row;
+  }
+
+  .left-side, .right-side {
+    flex: 1;
+  }
+}
