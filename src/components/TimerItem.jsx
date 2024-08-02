@@ -23,10 +23,8 @@ const TimerItem = ({ timer, removeTimer }) => {
   return (
     <div className="timer-item">
       <div>
-        <p className="remaining-time">
-          Remaining Time: {remainingTime.toFixed(2)}s
-        </p>
-        <p>Created: {timer.createdTime}</p>
+        <p className="remaining-time">{remainingTime.toFixed(2)}s</p>
+        <p> {timer.createdTime}</p>
       </div>
       <MdCancel className="delete-icon" onClick={() => removeTimer(timer.id)} />
     </div>

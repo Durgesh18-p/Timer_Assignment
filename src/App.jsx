@@ -26,7 +26,7 @@ const App = () => {
         <TimerList timers={timers} removeTimer={removeTimer} />
       </div>
       <div className="right-side">
-        <h2>Add Timer</h2>
+        <h2>New Timer</h2>
         <TimerForm addTimer={addTimer} />
       </div>
     </div>

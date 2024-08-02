@@ -25,12 +25,22 @@
   background-color: #fff;
 }
 
+.timer-list{
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .timer-list, .timer-form {
   display: flex;
   flex-direction: column;
 }
 
 .timer-item {
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -39,6 +49,7 @@
   border: 1px solid #ccc;
   background-color: #fff;
   position: relative;
+  border-radius: 20px;
 }
 
 .timer-item p {
@@ -67,13 +78,14 @@
 .timer-form button {
   padding: 10px;
   border: none;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #ccc;
+  color: #000;
   cursor: pointer;
 }
 
 .remaining-time {
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 h2 {
